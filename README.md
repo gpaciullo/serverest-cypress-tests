@@ -275,7 +275,7 @@ Gabriel Paciullo
 Senior QA Automation Engineer
 
 LinkedIn:
-https://www.linkedin.com/in/gabriel-paciullo/
+https://www.linkedin.com/in/gabriel-paciullo-11549325/
 
 GitHub:
 https://github.com/gpaciullo
