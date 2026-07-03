@@ -1,0 +1,8 @@
+node_modules/
+front/
+cypress/videos/
+cypress/screenshots/
+reports/
+mochawesome-report/
+.env
+.DS_Store

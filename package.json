@@ -1,0 +1,27 @@
+{
+  "name": "serverest-cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "cy:run:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.18.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "eslint": "^10.6.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.5.0"
+  }
+}
