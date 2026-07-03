@@ -1,9 +1,11 @@
-# 🚀 Cypress Automation - ServeRest
+# 🚀 Cypress Automation Framework
 
-Projeto de automação de testes desenvolvido utilizando **Cypress** e **JavaScript** para validar funcionalidades da aplicação **ServeRest**, contemplando testes **E2E (Frontend)** e **API**.
+![Cypress](https://img.shields.io/badge/Cypress-15.18.0-brightgreen)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Node](https://img.shields.io/badge/Node.js-22.x-green)
+![Status](https://img.shields.io/badge/Tests-7%20Passing-success)
 
-O objetivo deste projeto é demonstrar boas práticas de automação, organização de código, reutilização e independência dos cenários.
-
+Projeto desenvolvido para validar a aplicação **ServeRest**, contemplando testes E2E e API utilizando Cypress.
 ---
 
 # 📌 Tecnologias utilizadas
