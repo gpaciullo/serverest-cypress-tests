@@ -4,5 +4,5 @@ export const produtoSelectors = {
   preco: '[data-testid="preco"]',
   descricao: '[data-testid="descricao"]',
   quantidade: '[data-testid="quantity"]',
-  cadastrar: '[data-testid="cadastarProdutos"]'
-}
+  cadastrar: '[data-testid="cadastarProdutos"]',
+};

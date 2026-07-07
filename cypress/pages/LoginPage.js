@@ -1,28 +1,27 @@
-import { loginSelectors } from '../selectors/loginSelectors'
+import { loginSelectors } from "../selectors/loginSelectors";
 
 class LoginPage {
+  acessar() {
+    cy.visit("/login");
+  }
 
-    acessar() {
-        cy.visit('/login')
-    }
+  preencherEmail(email) {
+    cy.get(loginSelectors.email).clear().type(email);
+  }
 
-    preencherEmail(email) {
-        cy.get(loginSelectors.email).clear().type(email)
-    }
+  preencherSenha(senha) {
+    cy.get(loginSelectors.senha).clear().type(senha);
+  }
 
-    preencherSenha(senha) {
-        cy.get(loginSelectors.senha).clear().type(senha)
-    }
+  clicarEntrar() {
+    cy.get(loginSelectors.entrar).click();
+  }
 
-    clicarEntrar() {
-        cy.get(loginSelectors.entrar).click()
-    }
-
-    realizarLogin(email, senha) {
-        this.preencherEmail(email)
-        this.preencherSenha(senha)
-        this.clicarEntrar()
-    }
+  realizarLogin(email, senha) {
+    this.preencherEmail(email);
+    this.preencherSenha(senha);
+    this.clicarEntrar();
+  }
 }
 
-export default new LoginPage()
+export default new LoginPage();

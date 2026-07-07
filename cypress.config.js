@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   video: false,
@@ -9,18 +9,18 @@ module.exports = defineConfig({
   responseTimeout: 10000,
   chromeWebSecurity: false,
 
-  reporter: 'cypress-mochawesome-reporter',
+  reporter: "cypress-mochawesome-reporter",
 
   e2e: {
-    baseUrl: 'https://front.serverest.dev',
+    baseUrl: "https://front.serverest.dev",
 
     env: {
-      apiUrl: 'https://serverest.dev'
+      apiUrl: "https://serverest.dev",
     },
 
     setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on)
-      return config
-    }
-  }
-})
+      require("cypress-mochawesome-reporter/plugin")(on);
+      return config;
+    },
+  },
+});

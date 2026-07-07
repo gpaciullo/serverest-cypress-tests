@@ -1,26 +1,19 @@
-import UsuarioService from '../../services/UsuarioService'
-import { createUserPayload } from '../../factories/userFactory'
-import LoginPage from '../../pages/LoginPage'
+import UsuarioService from "../../services/UsuarioService";
+import { createUserPayload } from "../../factories/userFactory";
+import LoginPage from "../../pages/LoginPage";
 
-describe('Frontend - Login', () => {
+describe("Frontend - Login", () => {
+  it("deve realizar login com sucesso", () => {
+    const usuario = createUserPayload();
 
-    it('deve realizar login com sucesso', () => {
+    UsuarioService.cadastrarUsuario(usuario);
 
-        const usuario = createUserPayload()
+    LoginPage.acessar();
 
-        UsuarioService.cadastrarUsuario(usuario)
+    LoginPage.realizarLogin(usuario.email, usuario.password);
 
-        LoginPage.acessar()
+    cy.pause();
 
-        LoginPage.realizarLogin(
-            usuario.email,
-            usuario.password
-        )
-
-        cy.pause()
-
-        cy.contains('Home').should('be.visible')
-
-    })
-
-})
+    cy.contains("Home").should("be.visible");
+  });
+});

@@ -1,11 +1,11 @@
-import LoginPage from '../../pages/LoginPage'
+import LoginPage from "../../pages/LoginPage";
 
-describe('Frontend - Login', () => {
-  it('deve exibir erro ao tentar login com credenciais inválidas', () => {
-    LoginPage.acessar()
+describe("Frontend - Login", () => {
+  it("deve exibir erro ao tentar login com credenciais inválidas", () => {
+    LoginPage.acessar();
 
-    LoginPage.realizarLogin('usuario.invalido@serverest.com', 'senhaerrada')
+    LoginPage.realizarLogin("usuario.invalido@serverest.com", "senhaerrada");
 
-    cy.contains('Email e/ou senha inválidos').should('be.visible')
-  })
-})
+    cy.contains("Email e/ou senha inválidos").should("be.visible");
+  });
+});
