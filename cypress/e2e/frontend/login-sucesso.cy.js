@@ -12,8 +12,7 @@ describe("Frontend - Login", () => {
 
     LoginPage.realizarLogin(usuario.email, usuario.password);
 
-    cy.pause();
-
-    cy.contains("Home").should("be.visible");
+    cy.url().should('not.include', '/login')
+    cy.contains('Lista de Compras', { timeout: 10000 }).should('be.visible')
   });
 });
